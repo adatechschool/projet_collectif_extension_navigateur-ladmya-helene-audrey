@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🍆 Emojify-Everything Options</title>
+  <style>
+    label { display: block; margin-bottom: 0.2em; }
+    p { font-style: italic; margin-top: 0; }
+    span { font-style: normal; }
+    #disabled-sites { list-style-type: none; padding: 0; border: solid lightgray 1px; border-radius: 2px; }
+    #disabled-sites:empty::before { content: 'No sites currently disabled'; padding: 0.4em; }
+    #disabled-sites:not(:empty)::before { content: ''; }
+    .disabledList__item { display: flex; align-items: center; justify-content: space-between; padding: 0.2em 0.3em; }
+    .disabledList__item:nth-child(even) { background-color: #f3f3f3; }
+    .disabledList__item button { margin-left: 0.2em; padding: 0; min-width: 2em; }
+    #add-disabled { margin-bottom: 1em; }
+  </style>
+</head>
+
+<body>
+  <label>
+    <input type="checkbox" id="expanded">
+    Use expanded emoji library
+  </label>
+  <p>This will include many emojis (like <span>🅰</span>) but will significantly reduce performance</p>
+
+  <ul id="disabled-sites"></ul>
+
+  <form id="add-disabled">
+      <input type="url" id="disable" placeholder="http://www.example.com" />
+      <button type="submit">Disable</button>
+  </form>
+
+  <div id="status"></div>
+  <button id="save">Save</button>
+
+  <script src="js/options.js" charset="utf-8"></script>
+</body>
+</html>
