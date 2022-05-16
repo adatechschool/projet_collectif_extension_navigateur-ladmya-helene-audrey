@@ -8,5 +8,5 @@ Creation of a chrome extension that translates a sentence into emojis. If the wo
 - Faire un petit bouton qui permet d'activer les emoji -> button Ladmya, Hélène, Audrey 
 - front de l'extension -> GUI Hélène, Audrey
 
-#Credit
+# Credit
 Animation made by Adir : https://codepen.io/Adir-SL/pen/BXQBLx
